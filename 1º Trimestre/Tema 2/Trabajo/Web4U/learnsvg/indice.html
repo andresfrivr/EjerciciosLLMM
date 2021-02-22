@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<title>SVG Español</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: seagreen;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li.menu{
+  			float: left;
+		}
+
+		li.menu a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li.menu a:hover {
+  			background-color: indianred;
+		}
+		
+	</style>
+</head>
+<body background="../images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<nav>
+			<ul class="menu">
+				<li class="menu"><a href="../indice.html">Inicio</a></li>
+				<li class="menu"><a href="../learnhtml/indice.html">Aprende HTML</a></li>
+				<li class="menu"><a href="../learncss/indice.html">Aprende CSS</a></li>
+				<li class="menu"><a href="indice.html">Aprende SVG</a></li>
+			</ul>
+		</nav>
+	<h1>Aprende SVG<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SVG_logo_h.svg" alt="HTML Icon" style="float:right;width:250px;height:250px;"></h1>
+	<!-- Metemos en la cabecera de forma simple una imagen de svg -->
+<p style="background-color:rgba(255, 255, 255, 0.6);">SVG son las siglas de Scalable Vector Graphics. SVG define gráficos basados en vectores en formato XML.</p>
+	<!-- Creamos una sencilla lista para ir directamente al contenido -->
+	<ol style="background-color:white;">
+		<li><a href="#h01">Rectángulo SVG</a></li>
+		<li><a href="#h02">Círculo SVG</a></li>
+		<li><a href="#h03">Texto SVG</a></li>
+		<li><a href="#h04">Línea SVG</a></li>
+		<li><a href="#h05">Polilínea SVG</a></li>
+	</ol>
+	<!-- Primer apartado -->
+	<h2 id="h01" style="background-color:rgba(255, 255, 255, 0.6);">Rectángulo SVG</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El elemento &lt;rect&gt; se utiliza para crear un rectángulo y variaciones de una forma de rectángulo:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex-rect.jpg" alt="SVG Rectangle"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Explicación del código:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>Los atributos de ancho y alto del elemento &lt;rect&gt; define la altura y el ancho del rectángulo</li>
+		<li>El atributo de estilo se utiliza para definir propiedades CSS para el rectángulo.</li>
+		<li>La propiedad de relleno CSS define el color de relleno del rectángulo.</li>
+		<li>La propiedad de ancho de trazo de CSS define el ancho del borde del rectángulo.</li>
+		<li>La propiedad de trazo CSS define el color del borde del rectángulo.</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_rect.asp" target="_blank">Para obtener más información, haga clic aquí.</a>
+	<!-- Segundo apartado -->
+	<h2 id="h02" style="background-color:rgba(255, 255, 255, 0.6);">Círculo SVG</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El elemento &lt;circle&gt; es usado para crear un círculo:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex-circle.jpg" alt="SVG Circle example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Explicación del código:</strong><br>
+		<ul style="background-color:rgba(255, 255, 255, 0.6);">
+			<li>Los atributos cx y cy definen las coordenadas x e y del centro del círculo. Si se omiten cx y cy, el centro del círculo se establece en (0,0)</li>
+			<li>El atributo r define el radio del círculo</li>
+		</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_circle.asp" target="_blank">Para obtener más información, haga clic aquí.</a>
+	<!-- Tercer apartado -->
+	<h2 id="h03" style="background-color:rgba(255, 255, 255, 0.6);">Texto SVG</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El elemento &lt;text&gt; es usado para defir un texto:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_text.jpg" alt="SVG Text example"></p>
+	<a href="https://www.w3schools.com/graphics/svg_text.asp" target="_blank">Para obtener más información, haga clic aquí.</a>
+	<!-- Cuarto apartado -->
+	<h2 id="h04" style="background-color:rgba(255, 255, 255, 0.6);">Línea SVG</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El elemento &lt;line&gt; es usado para crear una línea:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_line.jpg" alt="SVG Line example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Explicación del código:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>El atributo x1 define el inicio de la línea en el eje x</li>
+		<li>El atributo y1 define el inicio de la línea en el eje y</li>
+		<li>El atributo x2 define el final de la línea en el eje x</li>
+		<li>El atributo y2 define el final de la línea en el eje y</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank">Para obtener más información, haga clic aquí.</a>
+	<!-- Quinto apartado -->
+	<h2 id="h05" style="background-color:rgba(255, 255, 255, 0.6);">Polilínea SVG</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El elemento &lt;polyline&gt; se utiliza para crear cualquier forma que consista solo en líneas rectas (que esté conectada en varios puntos):</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_polyline.jpg" alt="SVG Polyline example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Explicación del código:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>El atributo de puntos define la lista de puntos (pares de coordenadas x e y) necesarios para dibujar la polilínea.</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank">Para obtener más información, haga clic aquí.</a>
+	<!-- Pie de página -->
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+	
+</body>
+</html>

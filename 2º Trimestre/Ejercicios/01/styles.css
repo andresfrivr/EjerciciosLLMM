@@ -1,0 +1,62 @@
+/*Reseteando los estilos predefinidos*/
+
+*{
+    margin: 10px;
+    padding: 0;
+}
+
+.container{
+    width: 600px;
+}
+
+.cabecera{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    background: lightgray;
+    font-weight: bold;
+    size: 24px;
+    letter-spacing: 1.6em; 
+    word-spacing: 2em;
+    text-align: center;
+}
+
+.personaldata h2, .education h2, .professionalexperience h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    size: 18px;
+    letter-spacing: 1.4em;
+}
+
+.primerofecha, .segundofecha, .tercerofecha, .cuartofecha, .quintofecha{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+    width: 40%;
+    float: left;
+}
+
+.primerodescripcion, .segundodescripcion, .tercerodescripcion, .cuartodescripcion, .quintodescripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+    width: 40%;
+    float: left;
+}
+
+.personaldata{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
+.detalledatos{
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+#space{
+    margin: 100px;
+}

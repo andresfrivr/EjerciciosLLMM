@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<title>SVG English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: seagreen;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li.menu{
+  			float: left;
+		}
+
+		li.menu a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li.menu a:hover {
+  			background-color: indianred;
+		}
+		
+	</style>
+</head>
+<body background="../images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<nav>
+			<ul class="menu">
+				<li class="menu"><a href="../index.html">Home</a></li>
+				<li class="menu"><a href="../learnhtml/index.html">Learn HTML</a></li>
+				<li class="menu"><a href="../learncss/index.html">Learn CSS</a></li>
+				<li class="menu"><a href="index.html">Learn SVG</a></li>
+			</ul>
+		</nav>
+	<h1>Learn SVG<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SVG_logo_h.svg" alt="HTML Icon" style="float:right;width:250px;height:250px;"></h1>
+	<!-- Metemos en la cabecera de forma simple una imagen de svg -->
+<p style="background-color:rgba(255, 255, 255, 0.6);">SVG stands for Scalable Vector Graphics. SVG defines vector-based graphics in XML format.</p>
+	<!-- Creamos una sencilla lista para ir directamente al contenido -->
+	<ol style="background-color:white;">
+		<li><a href="#h01">SVG Rectangle</a></li>
+		<li><a href="#h02">SVG Circle</a></li>
+		<li><a href="#h03">SVG Text</a></li>
+		<li><a href="#h04">SVG Line</a></li>
+		<li><a href="#h05">SVG Polyline</a></li>
+	</ol>
+	<!-- Primer apartado -->
+	<h2 id="h01" style="background-color:rgba(255, 255, 255, 0.6);">SVG Rectangle</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The &lt;rect&gt; element is used to create a rectangle and variations of a rectangle shape:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex-rect.jpg" alt="SVG Rectangle"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Code explanation:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>The width and height attributes of the &lt;rect&gt; element define the height and the width of the rectangle</li>
+		<li>The style attribute is used to define CSS properties for the rectangle.</li>
+		<li>The CSS fill property defines the fill color of the rectangle.</li>
+		<li>The CSS stroke-width property defines the width of the border of the rectangle.</li>
+		<li>The CSS stroke property defines the color of the border of the rectangle.</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_rect.asp" target="_blank">For more information, click here.</a>
+	<!-- Segundo apartado -->
+	<h2 id="h02" style="background-color:rgba(255, 255, 255, 0.6);">SVG Circle</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The &lt;circle&gt; element is used to create a circle:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex-circle.jpg" alt="SVG Circle example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Code explanation:</strong><br>
+		<ul style="background-color:rgba(255, 255, 255, 0.6);">
+			<li>The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are omitted, the circle's center is set to (0,0)</li>
+			<li>The r attribute defines the radius of the circle</li>
+		</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_circle.asp" target="_blank">For more information, click here.</a>
+	<!-- Tercer apartado -->
+	<h2 id="h03" style="background-color:rgba(255, 255, 255, 0.6);">SVG Text</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The &lt;text&gt; element is used to define a text.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_text.jpg" alt="SVG Text example"></p>
+	<a href="https://www.w3schools.com/graphics/svg_text.asp" target="_blank">For more information, click here.</a>
+	<!-- Cuarto apartado -->
+	<h2 id="h04" style="background-color:rgba(255, 255, 255, 0.6);">SVG Line</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The &lt;line&gt; element is used to create a line:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_line.jpg" alt="SVG Line example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Code explanation:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>The x1 attribute defines the start of the line on the x-axis</li>
+		<li>The y1 attribute defines the start of the line on the y-axis</li>
+		<li>The x2 attribute defines the end of the line on the x-axis</li>
+		<li>The y2 attribute defines the end of the line on the y-axis</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank">For more information, click here.</a>
+	<!-- Quinto apartado -->
+	<h2 id="h05" style="background-color:rgba(255, 255, 255, 0.6);">SVG Polyline</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The &lt;polyline&gt; element is used to create any shape that consists of only straight lines (that is connected at several points):</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_polyline.jpg" alt="SVG Polyline example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);"><strong>Code explanation:</strong><br>
+	<ul style="background-color:rgba(255, 255, 255, 0.6);">
+		<li>The points attribute defines the list of points (pairs of x and y coordinates) required to draw the polyline</li>
+	</ul>
+	</p>
+	<a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank">For more information, click here.</a>
+	<!-- Pie de página -->
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+	
+</body>
+</html>

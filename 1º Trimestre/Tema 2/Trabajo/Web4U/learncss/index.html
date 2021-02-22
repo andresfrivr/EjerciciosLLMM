@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<title>CSS English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: cadetblue;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li.menu{
+  			float: left;
+		}
+
+		li.menu a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li.menu a:hover {
+  			background-color: indianred;
+		}
+		
+	</style>
+</head>
+<body background="../images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<nav>
+			<ul class="menu">
+				<li class="menu"><a href="../index.html">Home</a></li>
+				<li class="menu"><a href="../learnhtml/index.html">Learn HTML</a></li>
+				<li class="menu"><a href="index.html">Learn CSS</a></li>
+				<li class="menu"><a href="../learnsvg/index.html">Learn SVG</a></li>
+			</ul>
+		</nav>
+	<h1>Learn CSS<img src="images/CSS3_logo.svg" alt="HTML Icon" style="float:right;width:250px;height:250px;"></h1>
+	<!-- Metemos en la cabecera de forma simple una imagen de HTML -->
+	<p style="background-color:rgba(255, 255, 255, 0.6);">CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced.</p>
+	<!-- Creamos una sencilla lista para ir directamente al contenido -->
+	<ol style="background-color:white;">
+		<li><a href="#h01">CSS Syntax</a></li>
+		<li><a href="#h02">The CSS element Selector</a></li>
+		<li><a href="#h03">CSS Comments</a></li>
+		<li><a href="#h04">CSS background-color</a></li>
+		<li><a href="#h05">CSS Border Style</a></li>
+	</ol>
+	<!-- Primer apartado -->
+	<h2 id="h01" style="background-color:rgba(255, 255, 255, 0.6);">The CSS Syntax</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">A CSS rule-set consists of a selector and a declaration block:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/syntax.jpg" alt="CSS syntax"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_syntax.jpg" alt="CSS syntax example"></p>
+	<a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">For more information, click here.</a>
+	<!-- Segundo apartado -->
+	<h2 id="h02" style="background-color:rgba(255, 255, 255, 0.6);">The CSS element Selector</h2>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">The CSS id Selector</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The element selector selects HTML elements based on the element name.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_select.jpg" alt="CSS element select example"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">The CSS class Selector</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The class selector selects HTML elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/ex_el_class_sel.jpg" alt="CSS Class selector example">
+	<p style="background-color:rgba(255, 255, 255, 0.6);">You can also specify that only specific HTML elements should be affected by a class.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_class_specific.jpg" alt="CSS Class selector specific"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">HTML elements can also refer to more than one class.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_class_more.jpg" alt="CSS Class selector more than one"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">The CSS Universal Selector</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The universal selector (*) selects all HTML elements on the page.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/universal_selector.jpg" alt="Universal Selector"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">The CSS Grouping Selector</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The grouping selector selects all the HTML elements with the same style definitions.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/group_select.jpg" alt="Grouping Selector"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">For more information, click here.</a>
+	<!-- Tercer apartado -->
+	<h2 id="h03" style="background-color:rgba(255, 255, 255, 0.6);">CSS Comments</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Comments are used to explain the code, and may help when you edit the source code at a later date.<br>Comments are ignored by browsers.<br>A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */. You can add comments wherever you want in the code.<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/css_comments.jpg" alt="CSS Comments"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_comments.asp" target="_blank">For more information, click here.</a>
+	<!-- Cuarto apartado -->
+	<h2 id="h04" style="background-color:rgba(255, 255, 255, 0.6);">CSS background-color</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The background-color property specifies the background color of an element.</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/Background_color.jpg" alt="CSS Basic Background Color">
+	<p style="background-color:rgba(255, 255, 255, 0.6);">You can set the background color for any HTML elements:</p>
+	<img src="images/bg_color_any.jpg" alt="CSS Basic Background Color in any elements"><br>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_background.asp" target="_blank">For more information, click here.</a>
+	<!-- Quinto apartado -->
+	<h2 id="h05" style="background-color:rgba(255, 255, 255, 0.6);">CSS Border Style</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The border-style property specifies what kind of border to display. The following values are allowed:</p>
+		<ul style="background-color:rgba(255, 255, 255, 0.6);">
+			<li><b>dotted</b> - Defines a dotted border</li>
+			<li><b>dashed</b> - Defines a dashed border</li>
+			<li><b>solid</b> - Defines a solid border</li>
+			<li><b>double</b> - Defines a double border</li>
+			<li><b>groove</b> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+			<li><b>ridge</b> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+			<li><b>inset</b> - Defines a 3D inset border. The effect depends on the border-color value</li>
+			<li><b>outset</b> - Defines a 3D outset border. The effect depends on the border-color value</li>
+			<li><b>none</b> - Defines no border</li>
+			<li><b>hidden</b> - Defines a hidden border</li>
+		</ul>
+		<p style="background-color:rgba(255, 255, 255, 0.6);">The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/borders_basic.jpg" alt="CSS Basic Borders">
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_border.asp" target="_blank">For more information, click here.</a>
+	<!-- Pie de página -->
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+	
+</body>
+</html>

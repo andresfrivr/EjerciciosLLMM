@@ -1,0 +1,122 @@
+/* Para resetear los estilos del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font: bold 14px sans-serif;
+}
+
+header,section,footer,aside,nav,article,hgroup{
+    display: block;
+}
+
+body{
+    text-align: center;
+    background: #999999;
+    background: white;
+}
+
+.agrupar{
+    border: 1px solid black;
+    width: 960px;
+    margin: 15px auto; /*Lo que va hacia afuera */
+    /*padding: 100px; es como un relleno, lo que va hacia dentro*/
+
+}
+
+.cabecera{
+    background:#fffb99;
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+.cabecera h1{
+    text-align: left;
+}
+
+.menu{
+    background: #ccc;
+    padding: 5px 15px;
+    text-align: left;
+
+}
+
+/*Afecta a todos los elementos li de la clase menu*/
+.menu li{
+    list-style-type: none; /*Para quitar el estilo de la lista por defecto, en este caso los puntos.*/
+    padding: 5px;
+    font: bold 14px verdana;
+    /* Para cambiar los elementos en bloque a elementos en línea
+    es decir, en este caso, hacer que la lista de menú se nos
+    muestre de forma horizontal, ya que por defecto
+    las listas siempre se muestran en vertical,
+    es decir, en bloques.
+    */
+    display: inline-block;
+    
+}
+
+article{
+    background: #fffbb9;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}
+
+time{
+    color: #999;
+}
+article footer{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.seccion{
+    margin: 20px;
+    width: 60%;
+    /* Nuestro div contenedor mide  960px, se lo
+    restamos para poder calcular el ancho de la otra parte
+    de la web, 360px para la barra lateral*/
+    /* Usamos una regla css para ignorar el display: block; que
+    colocamos al principio*/
+    float: left;
+}
+
+.columna{
+    width: 30%;
+    /* Usamos una regla css para ignorar el display: block; que
+    colocamos al principio*/
+    float: left;
+    margin: 20px 0;
+}
+.columna blockquote{
+    border: 1px solid black;
+    padding: 40px;
+    background: #fffbb9;
+    margin-bottom: 20px;
+}
+
+.pie{
+    /* Usamos una regla css para ignorar el display: block; que
+    colocamos al principio*/
+    clear: both;
+    padding: 20px;
+    background: #2d3436;
+    color: #FFFFFF;
+}
+
+img{
+    width: 80px;
+    display: block;
+    margin: 20px 20px auto;
+}

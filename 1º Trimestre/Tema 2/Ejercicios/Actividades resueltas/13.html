@@ -1,0 +1,75 @@
+<!-- Display your timetable in the school. If you have the same subject 2 or 3 hours in a row then
+it should be combined in one cell. The break should be displayed in one row..-->
+<!DOCTYPE html>
+<html>
+<title>Ejercicio 13</title>
+<body>
+<style>
+	table, td, th {
+		border:1px solid black;
+		border-collapse:collapse;
+	}
+</style>
+	<table style="width:100%">
+		<tr>
+			<th>HOURS</th>
+			<th>MONDAY</th>
+			<th>TUESDAY</th>
+			<th>WEDNESDAY</th>
+			<th>THURSDAY</th>
+			<th>FRIDAY</th>
+		</tr>
+		<tr>
+			<th>08.00/09.00</th>
+			<td>FHW</td>
+			<td rowspan="2">IMPSO</td>
+			<td>LM</td>
+			<td rowspan="2">IMPSO</td>
+			<td>FHW</td>
+		</tr>
+		<tr>
+			<th>09.00/10.00</th>
+			<td>FOL</td>
+			<td>PADRE</td>
+			<td>IMPSO</td>
+		</tr>
+		<tr>
+			<th>10.00/11.00</th>
+			<td>LM</td>
+			<td>PADRE</td>
+			<td>FOL</td>
+			<td>LM</td>
+			<td>PADRE</td>
+		</tr>
+		<tr>
+			<th>11.00/11.30</th>
+			<style>
+				td {
+					text-align:center;
+				}
+			</style>
+			<td colspan="5"><strong>BREAK</strong></td>
+		</tr>
+		<tr>
+			<th>11.30/12.30</th>
+			<td>PADRE</td>
+			<td>PADRE</td>
+			<td>IMPSO</td>
+			<td>FOL</td>
+			<td>LM</td>
+		</tr>
+		<tr>
+			<th>12.30/13.30</th>
+			<td rowspan="2">IMPSO</td>
+			<td rowspan="2">GBD</td>
+			<td rowspan="2">GBD</td>
+			<td>FH</td>
+			<td rowspan="2">GBD</td>
+		</tr>
+		<tr>
+			<th>13.30/14.30</th>
+			<td>PADRE</td>
+		</tr>
+		
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<title>CSS Espanol</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: cadetblue;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li.menu{
+  			float: left;
+		}
+
+		li.menu a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li.menu a:hover {
+  			background-color: indianred;
+		}
+		
+	</style>
+</head>
+<body background="../images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<nav>
+			<ul class="menu">
+				<li class="menu"><a href="../indice.html">Inicio</a></li>
+				<li class="menu"><a href="../learnhtml/indice.html">Aprende HTML</a></li>
+				<li class="menu"><a href="indice.html">Aprende CSS</a></li>
+				<li class="menu"><a href="../learnsvg/indice.html">Aprende SVG</a></li>
+			</ul>
+		</nav>
+	<h1>Learn CSS<img src="images/CSS3_logo.svg" alt="HTML Icon" style="float:right;width:250px;height:250px;"></h1>
+	<!-- Metemos en la cabecera de forma simple una imagen de HTML -->
+	<p style="background-color:rgba(255, 255, 255, 0.6);">CSS es el lenguaje que usamos para diseñar un documento HTML. CSS describe cómo se deben mostrar los elementos HTML. Este tutorial le enseñará CSS de básico a avanzado.</p>
+	<!-- Creamos una sencilla lista para ir directamente al contenido -->
+	<ol style="background-color:white;">
+		<li><a href="#h01">Sintaxis en CSS</a></li>
+		<li><a href="#h02">Elemento selector en CSS</a></li>
+		<li><a href="#h03">Comentarios en CSS</a></li>
+		<li><a href="#h04">Color de fondo en CSS</a></li>
+		<li><a href="#h05">Estilo de borde en CSS</a></li>
+	</ol>
+	<!-- Primer apartado -->
+	<h2 id="h01" style="background-color:rgba(255, 255, 255, 0.6);">Sintaxis en CSS</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/syntax.jpg" alt="CSS syntax"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El selector apunta al elemento HTML al que desea aplicar estilo. El bloque de declaración contiene una o más declaraciones separadas por punto y coma. Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. Varias declaraciones CSS se separan con punto y coma y los bloques de declaración están rodeados por llaves.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_syntax.jpg" alt="CSS syntax example"></p>
+	<a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">Para más información, haga click aquí.</a>
+	<!-- Segundo apartado -->
+	<h2 id="h02" style="background-color:rgba(255, 255, 255, 0.6);">Elemento selector en CSS</h2>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">El selector de id de CSS</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El selector de elementos selecciona elementos HTML en función del nombre del elemento.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_select.jpg" alt="CSS element select example"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">El selector de clases CSS</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El selector de clases selecciona elementos HTML con un atributo de clase específico. Para seleccionar elementos con una clase específica, escriba un punto (.), Seguido del nombre de la clase.</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/ex_el_class_sel.jpg" alt="CSS Class selector example">
+	<p style="background-color:rgba(255, 255, 255, 0.6);">También puede especificar que solo los elementos HTML específicos se vean afectados por una clase.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_class_specific.jpg" alt="CSS Class selector specific"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Los elementos HTML también pueden hacer referencia a más de una clase.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_el_class_more.jpg" alt="CSS Class selector more than one"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">El selector universal de CSS</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El selector universal (*) selecciona todos los elementos HTML de la página.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/universal_selector.jpg" alt="Universal Selector"></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">El selector de agrupación CSS</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo.</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/group_select.jpg" alt="Grouping Selector"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Para más información, haga click aquí.</a>
+	<!-- Tercer apartado -->
+	<h2 id="h03" style="background-color:rgba(255, 255, 255, 0.6);">Comentarios en CSS</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Los comentarios se utilizan para explicar el código y pueden ayudar cuando edite el código fuente en una fecha posterior.<br>Los navegadores ignoran los comentarios. <br> Se coloca un comentario CSS dentro del elemento &lt;style&gt; y empiezan con /* finalizan con */. Puede agregar comentarios donde quiera en el código.<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/css_comments.jpg" alt="CSS Comments"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_comments.asp" target="_blank">Para más información, haga click aquí.</a>
+	<!-- Cuarto apartado -->
+	<h2 id="h04" style="background-color:rgba(255, 255, 255, 0.6);">Color de fondo en CSS</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">La propiedad background-color especifica el color de fondo de un elemento.</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/Background_color.jpg" alt="CSS Basic Background Color">
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Puede establecer el color de fondo de cualquier elemento HTML:</p>
+	<img src="images/bg_color_any.jpg" alt="CSS Basic Background Color in any elements"><br>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_background.asp" target="_blank">Para más información, haga click aquí.</a>
+	<!-- Quinto apartado -->
+	<h2 id="h05" style="background-color:rgba(255, 255, 255, 0.6);">Estilo de borde en CSS</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">La propiedad border-style especifica qué tipo de borde mostrar. Se permiten los siguientes valores:</p>
+		<ul style="background-color:rgba(255, 255, 255, 0.6);">
+			<li><b>dotted</b> - Define un borde punteado</li>
+			<li><b>dashed</b> - Define un borde de patrones de líneas discontinuas</li>
+			<li><b>solid</b> - Define un borde sólido</li>
+			<li><b>double</b> - Define un borde doble</li>
+			<li><b>groove</b> - Define un borde acanalado 3D. El efecto depende del valor del color del borde.</li>
+			<li><b>ridge</b> - Define un borde estriado en 3D. El efecto depende del valor del color del borde.</li>
+			<li><b>inset</b> - Defines a 3D inset border. The effect depends on the border-color value</li>
+			<li><b>outset</b> - Define un borde inicial 3D. El efecto depende del valor del color del borde.</li>
+			<li><b>none</b> - No define ningún borde</li>
+			<li><b>hidden</b> - Define un borde oculto</li>
+		</ul>
+		<p style="background-color:rgba(255, 255, 255, 0.6);">La propiedad de estilo de borde puede tener de uno a cuatro valores (para el borde superior, el borde derecho, el borde inferior y el borde izquierdo).</p>
+	<!--Imagen de ejemplo -->
+	<img src="images/borders_basic.jpg" alt="CSS Basic Borders">
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/css/css_border.asp" target="_blank">Para más información, haga click aquí.</a>
+	<!-- Pie de página -->
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+	
+</body>
+</html>

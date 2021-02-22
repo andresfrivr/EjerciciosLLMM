@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<title>HTML Espanol</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: coral;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li.menu{
+  			float: left;
+		}
+
+		li.menu a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li.menu a:hover {
+  			background-color: indianred;
+		}
+		
+	</style>
+</head>
+<body background="../images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<nav>
+			<ul class="menu">
+				<li class="menu"><a href="../indice.html">Inicio</a></li>
+				<li class="menu"><a href="indice.html">Aprende HTML</a></li>
+				<li class="menu"><a href="../learncss/indice.html">Aprende CSS</a></li>
+				<li class="menu"><a href="../learnsvg/indice.html">Aprende SVG</a></li>
+			</ul>
+		</nav>
+	<h1>Aprende HTML<img src="images/html_logo.png" alt="HTML Icon" style="float:right;width:250px;height:250px;"></h1>
+	<!-- Metemos en la cabecera de forma simple una imagen de HTML -->
+	<p style="background-color:rgba(255, 255, 255, 0.6);">HTML es el lenguaje de marcado estándar para páginas web. Con HTML puede crear su propio sitio web. HTML es fácil de aprender: ¡lo disfrutará!</p>
+	<!-- Creamos una sencilla lista para ir directamente al contenido -->
+	<ol style="background-color:white;">
+		<li><a href="#h01">La declaración &lt;!DOCTYPE&gt;</a></li>
+		<li><a href="#h02">Encabezados HTML</a></li>
+		<li><a href="#h03">Etiquetas de comentarios HTML</a></li>
+		<li><a href="#h04">Color de Fondo</a></li>
+		<li><a href="#h05">Enlaces HTML - Hypervínculos</a></li>
+	</ol>
+	<!-- Primer apartado -->
+	<h2 id="h01" style="background-color:rgba(255, 255, 255, 0.6);">La declaración &lt;!DOCTYPE&gt;</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">La declaración &lt;!DOCTYPE&gt; representa el tipo de documento y ayuda a los navegadores a mostrar las páginas web correctamente.<br>Solo debe aparecer una vez, en la parte superior de la página (antes de cualquier etiqueta HTML).<br>La declaración &lt;!DOCTYPE&gt; no distingue entre mayúsculas y minúsculas.<br>La declaración &lt;!DOCTYPE&gt; para HTML5 es:<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/ex_doctype.jpg" alt="Doctype example"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">Para más información, pincha aquí.</a>
+	<!-- Segundo apartado -->
+	<h2 id="h02" style="background-color:rgba(255, 255, 255, 0.6);">Encabezados HTML</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Los encabezados HTML se definen con la etiqueta &lt;h1&gt; hasta la etiqueta &lt;h6&gt;<br>&lt;h1&gt; define el encabezado más importante. &lt;h6&gt; define el encabezado menos importante.<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/ex_headings.jpg" alt="Headings example"></p>
+	<!--Imagen de ejemplo -->
+	<p style="background-color:rgba(255, 255, 255, 0.6);">The result:<br>
+	<img src="images/heading_result.jpg" alt="Doctype example"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/html/html_headings.asp" target="_blank">Para más información, pincha aquí.</a>
+	<!-- Tercer apartado -->
+	<h2 id="h03" style="background-color:rgba(255, 255, 255, 0.6);">Etiquetas de comentarios HTML</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Se pueden añadir comentarios a su recurso HTML utilizando la sintaxis siguiente. Tenga en cuenta que hay un signo de exclamación (!) En la etiqueta de inicio, pero no en la etiqueta final.<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/ex_comments.jpg" alt="Comments example"></p>
+	<!-- Link relacionado al contenido -->
+	<a href="https://www.w3schools.com/html/html_comments.asp" target="_blank">Para más información, pincha aquí</a>
+	<!-- Cuarto apartado -->
+	<h2 id="h04" style="background-color:rgba(255, 255, 255, 0.6);">Color de Fondo</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Puede establecer el color de fondo de los elementos HTML:<br>
+	<!--Imagen de ejemplo -->
+	<img src="images/backg_color_code.jpg" alt="Background color code"></p>
+	<p>El resultado es: <br>
+	<!--Imagen de ejemplo -->
+	<img src="images/backg_color_result.jpg" alt="Background color result"></p>
+	<a href="https://www.w3schools.com/html/html_colors.asp" target="_blank">Para más información, pincha aquí</a>
+	<!-- Quinto apartado -->
+	<h2 id="h05" style="background-color:rgba(255, 255, 255, 0.6);">Enlaces HTML - Hypervínculos</h2>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Los enlaces HTML son hipervínculos.<br>Puede hacer clic en un enlace y saltar a otro documento.<br>Cuando mueva el mouse sobre un enlace, la flecha del mouse se convertirá en una pequeña mano.<br></p>
+	<h3 style="background-color:rgba(255, 255, 255, 0.6);">Sintáxis:</h3>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">La etiqueta &lt;a&gt; define un hipervínculo. Tiene la siguiente sintaxis:</p><p style="color:DodgerBlue; background-color: aliceblue">&lt;a href="url"&gt;link text&lt;/a&gt;</p>
+	<!--Imagen de ejemplo -->
+	<p><img src="images/ex_links.jpg" alt="Link example"></p>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">El resultado es: <br>
+	<!--Imagen de ejemplo -->
+	<img src="images/links_result.jpg" alt="Links result"></p>
+	<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Para más información, pincha aquí</a>
+	<!-- Pie de página -->
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+	
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<title>Main Page English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta contenido a cualquier pantalla -->
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		header{
+			background-color: purple;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #dddddd;
+		}
+
+		li {
+  			float: left;
+		}
+
+		li a {
+  			display: block;
+  			padding: 10px;
+			
+		}
+		li a:hover {
+  			background-color: indianred;
+		}
+	</style>
+</head>
+<body background="images/background_1.jpg">
+	<header><h2>Web4U!</h2></header>
+		<!-- Creando una barra de navegación con listas flotantes a la derecha -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="learnhtml/index.html">Learn HTML</a></li>
+				<li><a href="learncss/index.html">Learn CSS</a></li>
+				<li><a href="learnsvg/index.html">Learn SVG</a></li>
+			</ul>
+		</nav>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">Welcome to our page. Here you will find updated content about markup language. We have the best guides for learning HTML, CSS, and SVG.<br>
+	You can visit my GitHub link to know more about my work.</p>
+	<!-- Creando un par de botonos que nos dan enlaces a varios destinos -->
+	<button onclick="document.location='https://github.com/andresfrivr'">GitHub</button>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">You can download the full version of the web in PDF in the following button.</p>
+	<button onclick="document.location='https://drive.google.com/file/d/1nYie91qiIxajJG-4f-YJynR042VoSsOK/view?usp=sharing'">PDF version - EN/ES (2.5Mb) - Download</button>
+	<p style="background-color:rgba(255, 255, 255, 0.6);">You can click on the button below to change the website into Spanish</p>
+<a href="indice.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Spain_flag_icon.svg" alt="Spanish website" style="width:42px;height:42px;">
+</a>
+	<footer style="background: white; border:2px solid black;"><small>&#174;Andrés Felipe Rivera Riaño</small></footer>
+</body>
+</html>
