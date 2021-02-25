@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.flexcontainer {
+    display: flex;
+    height: 400px;
+    /*por defecto la propiedad de fex-direction está en row, pero se puede cambiar en columna.*/
+    flex-direction: row;
+    /*por defecto está siempre en flex-wrap: no wrap*/
+    flex-wrap: nowrap;
+    /* align-items: baseline;
+    se alinean las bases de lo del interior, por ejemplo de la letra que contenga y es una linea recta.*/
+    /* align-content: sirve para alinear el contenido entero dentro del div*/
+    justify-content: center;
+    background-color: burlywood;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+.flexcontainer div {
+    background-color: gainsboro;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
