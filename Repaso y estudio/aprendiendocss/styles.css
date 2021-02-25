@@ -1,0 +1,96 @@
+/*para resetear los valores por defecto del navegador*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#container {
+    /*width: 70%*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header {
+    background: red;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px; /*la misma altura que tenga la caja, para poder centrar el texto*/
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+nav {
+    background: lightblue;
+    /*hay que darle una altura para que se vea el color*/
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    /* Para poner los elementos de la lista uno al lado del otro*/
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+/*Creando un elemento div para que el contenido no suba hacia arriba*/
+.clearfix {
+    clear: both;
+}
+
+/* los selectores id no se pueden repetir, pero si con el resto de selectores*/
+
+#content {
+    float: left;
+    width: calc(80% - 80px); /*le quitamos 40px de padding de un lado y del otro 40+40=80, con esto conseguimos que no se nos mueva el contenido*/
+    min-height: 500px;
+    background: green;
+    padding: 40px; /*vamos luego al width para quitarle los padding que le hemos metido*/
+}
+
+aside {
+    float: left;
+    width: cal(20% - 20px); /*le quitamos 10px de padding de un lado y del otro 10+10=20, con esto conseguimos que no se nos mueva el contenido*/
+    min-height: 500px;
+    background: orange;
+    /* Para separar el contenido de texto de la caja, sin esto queda muy pegado al border*/
+    padding-left: 10px; /*vamos luego al width para quitarle los padding que le hemos metido*/
+    padding-right: 10px; /*vamos luego al width para quitarle los padding que le hemos metido*/
+    padding-top: 20px;
+
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; /*la misma altura que tenga la caja, para poder centrar el texto*/
+}
+
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+
+}
+
+.article:first-child {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+h2.article {
+    font-size: 25px;
+    color:red;
+}
