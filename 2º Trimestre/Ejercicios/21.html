@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Rellena tu CV</h2>
+<form action="/action.php" method="GET">
+<fieldset>
+<legend>Datos personales</legend>
+<label for="provincias">Provincias</label><br>
+<input list="provincias" name="provincias">
+<datalist id="provincias">
+    <option value="Huelva">
+    <option value="Sevilla">
+    <option value="Cádiz">
+    <option value="Córdoba">
+    <option value="Granada">
+    <option value="Almería">
+    <option value="Jaén">
+    <option value="Málaga">
+</datalist><br><br>
+    <label for="birthday">Fecha de nacimiento</label><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+<label for="Tema de interés">Tema de interés</label><br>
+<select id="Tema de interés" name="Tema de interés">
+    <option value=""></option>
+    <option value="administración de base de datos">Administración de base de datos</option>
+    <option value="análisis y programación">Análisis y programación</option>
+    <option value="arquitectura">Arquitectura</option>
+    <option value="calidad">Calidad</option>
+    <option value="ERP, CRM, Business Intelligence">ERP, CRM, Business Intelligence</option>
+</select>
+</fieldset>
+</form>
+</body>
+</html>
