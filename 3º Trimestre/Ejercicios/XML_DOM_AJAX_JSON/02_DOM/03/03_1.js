@@ -1,0 +1,1 @@
+document.getElementsByTagName("title")[0].childNodes[0].nodeValue;

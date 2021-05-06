@@ -1,0 +1,1 @@
+document.getElementsByTagName('book')[2].getElementsByTagName('author').length;

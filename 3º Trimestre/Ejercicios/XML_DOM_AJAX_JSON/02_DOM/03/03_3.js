@@ -1,0 +1,1 @@
+document.getElementsByTagName("book")[3].attributes.length;
