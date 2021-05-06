@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<letter>
+    <From>Andrés</From>
+    <To>Profesor Ignacio</To>
+    <Date>2021-05-06</Date>
+    <texto> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar lorem at nisl scelerisque, ac fringilla mauris consequat. In sit amet libero pretium, rhoncus sapien sagittis, varius purus. Nullam dapibus felis diam, vitae placerat mi facilisis vel. Sed lacus purus, blandit eget cursus dignissim, mollis non elit. Vestibulum scelerisque tempus eros vel faucibus. Proin nec ex eu justo lacinia viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vitae eros mollis justo aliquam fermentum. Nulla justo felis, tempor nec felis sit amet, bibendum condimentum nisi. Pellentesque nec placerat justo. </texto>
+</letter>

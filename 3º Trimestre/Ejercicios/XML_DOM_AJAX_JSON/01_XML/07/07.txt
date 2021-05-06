@@ -1,0 +1,15 @@
+How XML should look is described in the XML 1.0 W3C Recommendation. The language of the standard is somewhat technical and formal, but being able to read the standard yourself is quite useful. Look into the standard and answer the following questions:
+
+	a. What do comments look like in XML? (section 2.5)
+
+<!--This is a comment area, write your comment-->
+
+Comments may appear anywhere in a document outside other markup; in addition, they may appear within the document type declaration at places allowed by the grammar. They are not part of the document's character data; an XML processor may, but need not, make it possible for an application to retrieve the text of comments. For compatibility, the string " -- " (double-hyphen) must not occur within comments.] Parameter entity references must not be recognized within comments.
+
+	b. Can an attribute be repeated in the same element? (section 3.1)
+
+Empty-element tags may be used for any element which has no content, whether or not it is declared using the keyword EMPTY. For interoperability, the empty-element tag should be used, and should only be used, for elements which are declared EMPTY.
+
+	c. Where is it stated that the element names in opening and closing tags must match?
+	
+Parameter-entity replacement text must be properly nested with parenthesized groups. That is to say, if either of the opening or closing parentheses in a choice, seq, or Mixed construct is contained in the replacement text for a parameter entity, both must be contained in the same replacement text.
