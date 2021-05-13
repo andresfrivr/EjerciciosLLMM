@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE addressbook [
+    <!ELEMENT addressbook (register*)>
+    <!ELEMENT register (name, address, phone, email, age, maritalstatus)>
+    <!ELEMENT name (#PCDATA) >
+    <!ELEMENT address (#PCDATA) >
+    <!ELEMENT phone (#PCDATA) >
+    <!ELEMENT email (#PCDATA) >
+    <!ELEMENT age (#PCDATA) >
+    <!ELEMENT maritalstatus (#PCDATA) >
+]>
+
+<addressbook>
+  <register>
+    <name>Jennifer</name>
+    <address>Wall Street</address>
+    <phone>666555444</phone>
+    <email>jennifer@email.com</email>
+    <age>40</age>
+    <maritalstatus>C</maritalstatus>
+  </register>
+  <register>
+    <name>James</name>
+    <address>The Black Parade</address>
+    <phone>666554433</phone>
+    <email>james@email,com</email>
+    <age>28</age>
+    <maritalstatus>S</maritalstatus>
+  </register>
+</addressbook>
