@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NEWSPAPER [
+    <!ELEMENT NEWSPAPER (ARTICLE+)>
+        <!ELEMENT ARTICLE (HEADLINE,BYLINE,BODY,NOTES)>
+            <!ELEMENT HEADLINE (#PCDATA)>
+            <!ELEMENT BYLINE (#PCDATA)>
+            <!ELEMENT BODY (#PCDATA)>
+            <!ELEMENT NOTES (#PCDATA)>
+            <!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
+            <!ATTLIST ARTICLE DATE CDATA #IMPLIED>
+        <!ENTITY NEWSPAPER "Vervet Logic Times">
+        <!ENTITY PUBLISHER "Vervet Logic Press">
+        <!ENTITY COPYRIGHT "Copyright 1998 Vervet Logic Press">
+]>
+
+<NEWSPAPER>
+    <ARTICLE AUTHOR="Author_1" DATE="2020-11-05">
+        <HEADLINE>
+        Headline 1
+        </HEADLINE>
+        <BYLINE>
+        Byline 1
+        </BYLINE>
+        <BODY>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quo exercitationem, suscipit possimus illum accusantium nisi? Ducimus nobis dolores iure?
+        </BODY>
+        <NOTES>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, non.
+        </NOTES>
+    </ARTICLE>
+
+    <ARTICLE AUTHOR="Author_2" DATE="2020-12-05">
+        <HEADLINE>
+        Headline 2
+        </HEADLINE>
+        <BYLINE>
+        Byline 2
+        </BYLINE>
+        <BODY>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, porro tenetur debitis ipsam reprehenderit officiis aliquid omnis ipsum? Dolorem, possimus!
+        </BODY>
+        <NOTES>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ipsa?
+        </NOTES>
+    </ARTICLE>
+
+</NEWSPAPER>
